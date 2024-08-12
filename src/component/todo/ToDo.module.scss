@@ -1,0 +1,160 @@
+
+.todoList {
+  text-align: center;
+  margin: 100px auto;
+  width: 60%;
+  height: max-content;
+  background-color: #d2d2d2;
+  border: 2px solid #3d3d3d;
+  padding: 50px 0;
+
+  h1 {
+    font-size: 4rem;
+    color: #595757;
+  }
+
+  button {
+    font-size: 1.7rem;
+    font-weight: bold;
+    padding: 10px 20px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+  }
+
+  .deleteButton {
+    background-color: red;
+    border-radius: 25px;
+    padding: 12px 12px;
+    font-size: 14px;
+    margin-left: 10px;
+
+    &:hover {
+      background-color: #d93535;
+    }
+  }
+  ol {
+    padding: 0;
+    width: max-content;
+    margin: 0 auto;
+    margin-top: 30px;
+  }
+
+  li {
+    font-size: 1.6rem;
+    font-weight: bold;
+    background-color: rgba(248, 245, 245, 0.97);
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 3px solid rgba(227, 226, 226, 0.9);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    span{
+      margin-right: 15px;
+    }
+  }
+
+  .text {
+    flex: 1;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0%;
+  }
+  @media (max-width: 452px) {
+    input[type='text'] {
+      margin-bottom: 30px;
+    }
+  }
+  .filter{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    align-items: center;
+    margin-top: 30px;
+    button{
+      font-size: 12px;
+      background-color: white;
+      color: #595757;
+
+      &:active{
+        background-color: #929496;
+      }
+    }
+
+  }
+
+}
+
+.inputContainer{
+  button{
+  &:active{
+    background-color: #3d3d3d;
+    color: #d5d5d5;
+    transition: .3s ease;
+  }
+  }
+  input[type='text'] {
+    font-size: 1.6rem;
+    padding: 10px;
+    border: 2px solid #d5d5d5;
+    border-radius: 5px;
+    color: rgb(14, 6, 6);
+    margin-right: 5px;
+  }
+}
+
+
+.taskList{
+
+  input[type='checkbox']{
+    appearance: none;
+    position: relative;
+    cursor: pointer;
+    width: 35px;
+    height: 35px;
+    background: #f6f5f5;
+    box-shadow: inset 0 0 5px rgb(0 0 0 / 0.2);
+    border-radius: 15px;
+    border: 1px solid #FFFFFF;
+    transition: 500ms;
+
+    &::after{
+      content: "\2714";
+      position: absolute;
+      color: #2ef139;
+      top: -3px;
+      left: 6px;
+      width: 0px;
+      height: 0px;
+      font-size: 26px;
+      transition: 500ms;
+      overflow: hidden;
+    }
+    &:checked::after{
+      width: 30px;
+      height: 30px;
+      transition: 500ms;
+    }
+  }
+
+  span{
+    margin: 0 30px;
+  }
+
+}
+.p{
+  width: max-content;
+  padding: 5px 10px;
+  text-align: center;
+  margin-top: -20px;
+  margin-left: 10px;
+  font-size: 1rem;
+  color: #0c0707;
+  background-color: #fff9f9;
+  border-radius: 15px;
+}
