@@ -1,4 +1,4 @@
-# ToDo + Typescript
+# ToDo + TypeScript
 
 **This is an application for creating todo**
 
